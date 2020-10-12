@@ -1,0 +1,120 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+  margin-top: 30px;
+}
+
+h1 {
+  text-align: center;
+  margin-bottom: 35px;
+}
+
+p.chicken, p.beef, p.sushi {
+  display: inline-block;
+  border: 1px solid black;
+  width: 160px;
+  height: 25px;
+  text-align: center;
+  position: relative;
+  left: 159px;
+  top: -1px;
+}
+
+
+.chicken  {
+  background-color: rosybrown;
+}
+
+.beef {
+  color: white;
+  background-color: red;
+}
+
+.sushi {
+  background-color: yellow;
+}
+
+.container {
+  background-color: blue;
+}
+
+
+section {
+  border: 1px solid black;
+  background-color: grey;
+  margin : 5px 5px 5px 5px;
+  width: 320px;
+  float: left;
+}
+
+#content {
+  margin : 5px 5px 5px 5px
+  
+}
+
+
+
+@media only screen and (min-width: 992px) {
+  section.box-1, section.box-2, section.box-3 {
+    float: left;
+    width: 270px;
+    margin: 5px, 10px, 5px, 10px;
+  }
+
+  p.chicken, p.beef, p.sushi {
+    position: relative;
+    left: 109px;
+    top: -1px;
+  }
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px){
+  
+  .section.box-1 {
+    width: 500px;
+  }
+
+
+  section.box-3 {
+    width: 1000px;
+    margin-right: 10px;
+    
+  }
+
+  p.beef {
+    position: relative;
+    left: 160px;
+  }
+  p.sushi {
+    position: relative;
+    left: 720px;
+  }
+  
+}
+
+@media only screen and (min-width: 767px) {
+  section {
+    margin: 0px, 10px, 0px, 10px;
+    float: none;
+  }
+
+  div.container {
+    background-color: white;
+  }
+
+  h1 {
+    margin-bottom : 15px;
+  }
+}
+  
+
+
+
+
+
+
+
